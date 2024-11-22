@@ -1,0 +1,27 @@
+<form [formGroup]="profileForm">
+    @if (profileForm.get('userName')) {
+        <div>
+            <label>userName</label>
+            <input formControlName="userName">
+        </div>
+    }
+    @if (profileForm.get('email')) {
+        <div>
+            <label>email</label>
+            <input formControlName="email">
+        </div>
+    }
+    @if (profileForm.get('role')) {
+        <div>
+            <label>role</label>
+            <input formControlName="role">
+        </div>
+    }
+    @if (profileForm.get('address')) {
+        <div>
+            <label>address</label>
+            <input formControlName="address">
+        </div>
+    }
+
+</form>
